@@ -1,0 +1,53 @@
+<div>
+    <div class="submit-form">
+      <div>
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombre"
+            required
+            [(ngModel)]="alumno.nombre"
+            name="nombre"
+          />
+        </div>
+  
+        <div class="form-group">
+          <label for="apellido">Apellido</label>
+          <input
+            class="form-control"
+            id="apellido"
+            required
+            [(ngModel)]="alumno.apellido"
+            name="apellido"
+          />
+        </div>
+
+        <div class="form-group">
+            <label for="curso">Curso</label>
+            <input
+              class="form-control"
+              id="curso"
+              required
+              [(ngModel)]="alumno.curso"
+              name="curso"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="edad">Edad</label>
+            <input
+              class="form-control"
+              id="edad"
+              required
+              [(ngModel)]="alumno.edad"
+              name="edad"
+            />
+          </div>
+  
+        <button (click)="updateAlumno()" class="btn btn-success mr-2">Editar</button>
+        <button (click)="deleteAlumno()" class="btn btn-danger">Eliminar</button>
+      </div>
+    </div>
+  </div>
